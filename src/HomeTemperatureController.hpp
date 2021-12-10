@@ -5,11 +5,16 @@
 #include <ArduinoJson.h>
 #include <Helper.hpp>
 
-//STATUS
-enum
+//STRUCTURE FOR STORING STATISTICS
+struct TEMPERATURE
 {
-  ALWAYS_MODE = 24,
-  DAY_NIGHT_MODE = 12
+  unsigned long EpochTime; //getEpochTime returns the Unix epoch, which are the seconds elapsed since 00:00:00 UTC on 1 January 1970
+  float Temperature;
+};
+
+//STATUS
+enum { ALWAYS_MODE = 24,
+       DAY_NIGHT_MODE = 12
 };
 
 //TEMPERATURE MIN AND MAX SETTINGS
@@ -64,7 +69,7 @@ private:
   float get_t_always() { return t_always; };
   float get_t_day() { return t_day; };
   float get_t_night() { return t_night; };
-  float get_t_current(){ return t_current; };
+  float get_t_current() { return t_current; };
   float get_t_current_from_sensor();
   int get_mode() { return mode; };
 
