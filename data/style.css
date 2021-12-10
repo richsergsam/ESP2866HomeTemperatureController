@@ -1,0 +1,157 @@
+html {
+  font-size: 64px;
+  color: aliceblue;
+  font-family: Arial;
+  background-color: #f5f0e1;
+}
+
+input:invalid {
+  color: red !important;
+}
+
+.alert {
+  margin-top: 400px;
+  width: 800px;
+  position: absolute;
+  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border: solid;
+  vertical-align: middle;
+  border-radius: 32px;
+  display: inline-block;
+  border-width: 8px;
+  background-color: #f5f0e1;
+  border-color: black;
+  
+}
+
+.alert_text{
+  margin: 128px;
+  color:black;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 96px;
+}
+
+.blur {
+  filter: blur(40px);
+}
+
+input[type="number"] {
+  width: 200px;
+  font-size: 96px;
+  color: #1e3d59;
+  background-color: #f5f0e1;
+  border: none;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 300px;
+  font-size: 96px;
+  color: #1e3d59;
+  background-color: #f5f0e1;
+  border-radius: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+div.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 1000px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  touch-action: manipulation;
+}
+
+div.half {
+  width: 50%;
+  float: left;
+  display: flex;
+}
+
+.card {
+  border-radius: 32px;
+  display: inline-block;
+  background-color: #1e3d59;
+  text-align: center;
+  border: solid;
+  border-color: #1e3d59;
+  border-width: 16px;
+
+  /* NO SELECT */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.card.enable {
+  border-color: #1e847f;
+}
+
+.card.pump {
+  font-size: 64px;
+  width: 600px;
+  opacity: 80%;
+  line-height: 90px;
+}
+
+.card.pump_on {
+  background-color: #1e847f;
+}
+
+div.time {
+  width: 600px;
+  opacity: 80%;
+  line-height: 90px;
+}
+div.temperature {
+  width: 600px;
+  opacity: 80%;
+  line-height: 90px;
+}
+
+span.radio_label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 400px;
+  margin: 16px;
+}
+
+.label {
+  display: inline-block;
+  width: 250px;
+  text-align: left;
+  color: #1e3d59;
+  font-size: 96px;
+}
+
+.label.time {
+  margin: 16px;
+  width: 530px;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.input_button {
+  font-weight: bold;
+  font-size: 128px;
+  margin: 32px;
+  width: 128px;
+  height: 128px;
+  line-height: 128px;
+}

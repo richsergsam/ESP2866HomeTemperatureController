@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Home temperature</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script> 
+  </head>
+  <body>
+    <div id="alert" class="container" style="display: none;">
+    <div class="alert " onclick="alert_hide()">
+      <span class="alert_text">Настройки применены</span>
+    </div>
+  </div>
+  <div id="root" class="blur">
+    <div class="container"><div id="current_time" class="card time">00:00:00</div></div>
+    <div class="container">
+      <div id="current_temperature" class="card temperature">-1 c°</div>
+    </div>
+    <div class="container">
+      <div id="pump" class="card pump pump_on">Обогрев ON</div>
+    </div>
+    <hr />
+    <div class="container">
+      <div id="mode_24" class="card">
+        <span class="radio_label">Сутки</span>
+      </div>
+      <div id="mode_12" class="card enable">
+        <span class="radio_label">День/Ночь</span>
+      </div>
+    </div>
+    <div id="temperature_24_container" class="container">
+      <span class="label">t<sub>ср</sub></span>
+      <input id="temperature_24" type="number" min="16" max="30" step="0.5" value="22" />
+      <div id="dec_t_24" class="card input_button">&#8722</div>
+      <div id="inc_t_24" class="card input_button">+</div>
+    </div>
+    <div id="temperature_day_container" class="container">
+      <span class="label">t<sub>ср</sub> ☼ </span>
+      <input id="temperature_day" type="number" min="16" max="30" step="0.5" value="22" />
+      <div id="dec_t_day" class="card input_button">&#8722</div>
+      <div id="inc_t_day" class="card input_button">+</div>
+    </div>
+    <div id="temperature_night_container" class="container">
+      <span class="label">t<sub>ср</sub> &#9790; </span>
+      <input id="temperature_night" type="number" min="16" max="30" step="0.5" value="22" />
+      <div id="dec_t_night" class="card input_button">&#8722</div>
+      <div id="inc_t_night" class="card input_button">+</div>
+    </div>
+    <div class="container">
+      <span class="label">&Delta;t</span>
+      <input id="temperature_delta" type="number" min="0.1" max="5.0" step="0.1" value="1.0" />
+      <div id="dec_t_delta" class="card input_button">&#8722</div>
+      <div id="inc_t_delta" class="card input_button">+</div>
+    </div>
+    <div id="time_day_start_container" class="container">
+      <span class="label time">Начало дня</span>
+      <input id="time_day_start" type="text" value="6:00"/>
+    </div>
+    <div id="time_day_end_container" class="container">
+      <span class="label time">Конец дня</span>
+      <input id="time_day_end" type="text" value="20:00"/>
+    </div>
+    <hr/>
+    <div class="container">
+      <div id="submit_button" class="card">
+        <span class="radio_label">Применить</span>
+      </div>
+    </div>
+  </div>
+  <!-- <a href="/currrent_params">Текущие параметры в json</a>
+  <a href="/board_status">Состояние микроконтроллера</a> -->
+  </body>
+</html>
